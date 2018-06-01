@@ -1,21 +1,22 @@
 package com.example.monsterhunteradmin;
 
+import java.util.HashMap;
+
 /**
  * Created by dam2a on 30/01/18.
  */
 
 public class Monster {
-    String name;
-    int imageUrl;
-    String picUrl;
+    public String name;
+    public String desc;
 
-    public Monster(/*String name,*/ int imageUrl) {
-        /*this.name = name;*/
-        this.imageUrl = imageUrl;
-    }
+    public String picUrl;
+    public String mDetailPic;
 
-    public Monster(String name, String picUrl){
+    public Monster(String name, String picUrl, String desc, String mDetailPic) {
         this.name = name;
         this.picUrl = picUrl;
+        this.desc = desc;
+        this.mDetailPic = mDetailPic;
     }
 }
